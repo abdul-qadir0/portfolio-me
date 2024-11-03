@@ -22,7 +22,7 @@ const Projects = () => {
       "title": "Customer Churn Prediction with NLP Insights",
       "description": "A predictive model to identify customers at risk of churning by leveraging insights from customer feedback and interactions. Using NLP techniques, this project analyzes sentiment and extracts key themes to enhance predictive accuracy and provide actionable insights for reducing churn rates. Deployed with Streamlit for easy access to predictions and insights.",
       "imageUrl": "https://www.voxco.com/wp-content/uploads/2021/09/Everything-you-need-to-know-about-Customer-Churn1.jpg",
-      "link": "https://github.com/MuhammadUmerKhan/Customer-Churn-Prediction-with-NLP-Insights"
+      "link": "https://customer-churn-prediction-with-nlp-insights-rlazeungatswsd5e4c.streamlit.app/"
     }
     
   ]; 
