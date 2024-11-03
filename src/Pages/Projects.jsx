@@ -18,6 +18,13 @@ const Projects = () => {
     //     "https://media.istockphoto.com/id/1386672154/photo/using-system-ai-chatbot-in-computer-or-mobile-application-to-uses-artificial-intelligence.webp?a=1&b=1&s=612x612&w=0&k=20&c=6xp1y22QnGjuRX4EUUnTQKZj1cNpAhfYNefMZVCct9c=",
     //   link: "https://github.com/MuhammadUmerKhan/End-to-End-NLP-Project--Chatbot-",
     // },
+    {
+      "title": "Customer Churn Prediction with NLP Insights",
+      "description": "A predictive model to identify customers at risk of churning by leveraging insights from customer feedback and interactions. Using NLP techniques, this project analyzes sentiment and extracts key themes to enhance predictive accuracy and provide actionable insights for reducing churn rates. Deployed with Streamlit for easy access to predictions and insights.",
+      "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40sateeshgodewar45%2Fcustomer-churn-analysis-203c1284f503&psig=AOvVaw13oXCXBLnMI0_aDCyozKyR&ust=1730694732263000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDu8baqv4kDFQAAAAAdAAAAABAE",
+      "link": "https://github.com/MuhammadUmerKhan/Customer-Churn-Prediction-with-NLP-Insights"
+    }
+    
   ]; 
 
   const [showMore, setShowMore] = useState(false);
