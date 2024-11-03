@@ -21,7 +21,7 @@ const Projects = () => {
     {
       "title": "Customer Churn Prediction with NLP Insights",
       "description": "A predictive model to identify customers at risk of churning by leveraging insights from customer feedback and interactions. Using NLP techniques, this project analyzes sentiment and extracts key themes to enhance predictive accuracy and provide actionable insights for reducing churn rates. Deployed with Streamlit for easy access to predictions and insights.",
-      "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40sateeshgodewar45%2Fcustomer-churn-analysis-203c1284f503&psig=AOvVaw13oXCXBLnMI0_aDCyozKyR&ust=1730694732263000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDu8baqv4kDFQAAAAAdAAAAABAE",
+      "imageUrl": "../../project_pics/customer_churn.png",
       "link": "https://github.com/MuhammadUmerKhan/Customer-Churn-Prediction-with-NLP-Insights"
     }
     
