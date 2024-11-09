@@ -20,15 +20,17 @@ const StarryBackground = () => {
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          radius: Math.random() * 1.5,
-          opacity: Math.random(),
+          radius: Math.random() * 2 + 1,
+          opacity: Math.random() * 0.5 + 0.5,
+          speed: Math.random() * 0.05
         });
       }
       return stars;
     };
 
     const drawStars = (stars) => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
       stars.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
@@ -37,22 +39,35 @@ const StarryBackground = () => {
       });
     };
 
-    const animateStars = (stars) => {
+    const updateStars = (stars) => {
       stars.forEach((star) => {
+        star.y += star.speed;
+        if (star.y > canvas.height) {
+          star.y = 0;
+        }
         star.opacity = Math.sin(Date.now() * 0.001 + star.x + star.y) * 0.5 + 0.5;
       });
+    };
+
+    const animateStars = (stars) => {
+      updateStars(stars);
       drawStars(stars);
       animationFrameId = requestAnimationFrame(() => animateStars(stars));
     };
 
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+    const handleResize = () => {
+      resizeCanvas();
+      stars = createStars(400);
+    };
 
-    const stars = createStars(200);
+    resizeCanvas();
+    window.addEventListener('resize', handleResize);
+
+    let stars = createStars(400);
     animateStars(stars);
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);

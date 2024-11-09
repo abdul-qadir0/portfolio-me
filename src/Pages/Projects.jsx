@@ -1,4 +1,4 @@
-// components/Projects.jsx
+// pages/Projects.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 

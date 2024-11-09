@@ -1,4 +1,4 @@
-// components/About.jsx
+// pages/About.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
