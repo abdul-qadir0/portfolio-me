@@ -1,6 +1,7 @@
+// components/About.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import { FaDownload, FaLinkedin, FaGithub, FaCode, FaDatabase, FaChartBar } from "react-icons/fa";
+import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const skills = [
@@ -17,9 +18,9 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 min-h-screen p-8 text-white"
+      className="min-h-screen p-8"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto text-gray-300">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

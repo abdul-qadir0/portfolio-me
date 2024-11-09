@@ -1,3 +1,4 @@
+// components/Projects.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -30,7 +31,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 min-h-screen p-8 flex flex-col items-center"
+      className="min-h-screen p-8 flex flex-col items-center"
     >
       <motion.h1
         initial={{ y: -50, opacity: 0 }}

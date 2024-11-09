@@ -1,4 +1,4 @@
-// Footer.jsx
+// components/Footer.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
@@ -9,7 +9,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
-      className="bg-gradient-to-r from-gray-900 via-purple-900 to-violet-900 text-gray-300 py-8"
+      className="bg-gray-900 bg-opacity-80 backdrop-blur-md text-gray-300 py-8"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">

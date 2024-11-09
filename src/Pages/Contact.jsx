@@ -1,3 +1,4 @@
+// components/Contact.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
@@ -8,7 +9,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 min-h-screen flex flex-col justify-center items-center p-8"
+      className="min-h-screen flex flex-col justify-center items-center p-8"
     >
       <div className="max-w-4xl w-full">
         <motion.h1
