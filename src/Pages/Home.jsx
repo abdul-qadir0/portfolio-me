@@ -17,15 +17,16 @@ const Home = () => {
         transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
         className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-6"
       >
-        Welcome to My Portfolio
+        🌟 Welcome to My Portfolio 🌟
       </motion.h1>
+      
       <motion.p
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
         className="text-xl text-gray-300 mb-12 text-center max-w-2xl"
       >
-        I am Muhammad Umer Khan, an aspiring Data Scientist passionate about turning data into insights.
+        Hello! I'm <span className="font-semibold text-white">Muhammad Umer Khan</span> 🎓, an aspiring Data Scientist who loves transforming raw data into meaningful insights 📊. I thrive on solving complex problems with creativity and precision.
       </motion.p>
 
       <motion.div
@@ -41,6 +42,15 @@ const Home = () => {
         />
       </motion.div>
 
+      <motion.p
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.8, type: "spring" }}
+        className="text-lg text-gray-400 text-center max-w-xl mb-8"
+      >
+        Dive into my world of data science projects and explore the ways I bring data to life through machine learning, data visualization, and more! 🚀
+      </motion.p>
+
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -51,13 +61,13 @@ const Home = () => {
           to="/projects"
           className="bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
         >
-          View My Projects
+          🌐 View My Projects
         </Link>
         <Link
           to="/contact"
           className="bg-gray-700 text-white py-3 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:bg-gray-600"
         >
-          Get in Touch
+          ✉️ Get in Touch
         </Link>
       </motion.div>
 

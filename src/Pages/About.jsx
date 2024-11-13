@@ -4,12 +4,12 @@ import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const skills = [
-    { name: "SQL", percentage: 75 },
-    { name: "Python", percentage: 90 },
-    { name: "Data Visualization", percentage: 95 },
-    { name: "Statistical Analysis", percentage: 85 },
-    { name: "Machine Learning", percentage: 85 },
-    { name: "Natural Language Processing (NLP)", percentage: 80 },
+    { name: "SQL 🗄️", percentage: 75 },
+    { name: "Python 🐍", percentage: 90 },
+    { name: "Data Visualization 📊", percentage: 95 },
+    { name: "Statistical Analysis 📐", percentage: 85 },
+    { name: "Machine Learning 🤖", percentage: 85 },
+    { name: "Natural Language Processing (NLP) 🗣️", percentage: 80 },
   ];
 
   return (
@@ -26,9 +26,9 @@ const About = () => {
           transition={{ delay: 0.2 }}
           className="text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-12"
         >
-          About Me
+          About Me 
         </motion.h1>
-        
+
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -42,35 +42,35 @@ const About = () => {
               className="w-48 h-48 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 transition-transform duration-300 transform hover:scale-105 ring-4 ring-purple-500 ring-opacity-50"
             />
             <div>
-              <h2 className="text-3xl font-semibold mb-4">Profile</h2>
+              <h2 className="text-3xl font-semibold mb-4">👤 Profile</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Hello! I am Muhammad Umer Khan, a driven and ambitious Data Scientist-in-the-making with a fierce passion for unraveling the insights hidden within data. I am currently pursuing a B.Sc. in Computer Science and gaining invaluable real-world experience through internships and hands-on projects.
+                Hello! I am Muhammad Umer Khan, an aspiring Data Scientist passionate about harnessing data for insights. I’m currently pursuing a B.Sc. in Computer Science, while building real-world skills through hands-on projects and internships.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                My expertise spans across various domains including Data Analysis, Machine Learning, and Natural Language Processing (NLP). I thrive on learning new technologies and applying them to solve complex problems. With a foundation in SQL, Python, and advanced data visualization, I'm well-prepared to tackle challenges in data-driven industries.
+                My expertise covers <strong>Data Analysis</strong>, <strong>Machine Learning</strong>, and <strong>Natural Language Processing (NLP)</strong>. I enjoy exploring technologies and crafting solutions for complex challenges, with a strong foundation in <strong>SQL</strong>, <strong>Python</strong>, and data visualization.
               </p>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Domains</h3>
+              <h3 className="text-2xl font-semibold mb-2">📂 Domains</h3>
               <p className="text-gray-300">Retail, E-commerce, HR Analytics, Customer Segmentation, Natural Language Processing (NLP)</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Languages</h3>
+              <h3 className="text-2xl font-semibold mb-2">🗣️ Languages</h3>
               <p className="text-gray-300">English, Urdu</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2">BI Tools</h3>
+              <h3 className="text-2xl font-semibold mb-2">📊 BI Tools</h3>
               <p className="text-gray-300">Microsoft Power BI</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Technical Skills</h3>
+              <h3 className="text-2xl font-semibold mb-2">🛠️ Technical Skills</h3>
               <p className="text-gray-300">Python, SQL, Spacy, NLTK, FastAPI, MySQL, Scikit-learn, Pandas, Numpy, Matplotlib, Seaborn</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Interests</h3>
+              <h3 className="text-2xl font-semibold mb-2">🌱 Interests</h3>
               <p className="text-gray-300">Gym, Learning New Technologies, Web Development, Exploring Machine Learning Algorithms</p>
             </div>
           </div>
@@ -82,17 +82,17 @@ const About = () => {
           transition={{ delay: 0.6 }}
           className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
         >
-          <h2 className="text-3xl font-semibold mb-6">Education</h2>
+          <h2 className="text-3xl font-semibold mb-6">🎓 Education</h2>
           <div className="space-y-4">
             <div>
               <h3 className="text-xl font-semibold">B.Sc. in Computer Science</h3>
-              <p className="text-gray-300">2023-Present</p>
+              <p className="text-gray-300">2023 - Present</p>
               <p className="text-gray-300">Sindh Madressatul Islam University</p>
               <p className="text-gray-300">Grade: First Class Distinction</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold">Higher Secondary School</h3>
-              <p className="text-gray-300">2021-2022</p>
+              <p className="text-gray-300">2021 - 2022</p>
               <p className="text-gray-300">Government College for Men</p>
               <p className="text-gray-300">Grade: First Class Distinction</p>
             </div>
@@ -105,7 +105,7 @@ const About = () => {
           transition={{ delay: 0.8 }}
           className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
         >
-          <h2 className="text-3xl font-semibold mb-6">Skills</h2>
+          <h2 className="text-3xl font-semibold mb-6">💻 Skills</h2>
           <div className="space-y-4">
             {skills.map((skill) => (
               <div key={skill.name}>
@@ -132,7 +132,7 @@ const About = () => {
           transition={{ delay: 1 }}
           className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl backdrop-blur-md"
         >
-          <h2 className="text-3xl font-semibold mb-6">Get In Touch</h2>
+          <h2 className="text-3xl font-semibold mb-6">📬 Get In Touch</h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <motion.a
               href="/path/to/your/CV.pdf"
