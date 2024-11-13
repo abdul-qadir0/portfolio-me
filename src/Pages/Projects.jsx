@@ -1,4 +1,3 @@
-// pages/Projects.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -70,7 +69,7 @@ const Projects = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -50 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105"
+                  className="bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 backdrop-blur-md"
                 >
                   <img
                     src={project.imageUrl}

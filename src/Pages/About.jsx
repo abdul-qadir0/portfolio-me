@@ -1,4 +1,3 @@
-// pages/About.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -34,13 +33,13 @@ const About = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12"
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
         >
           <div className="flex flex-col md:flex-row items-center mb-8">
             <img
               src="https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/porfolio.jpg"
               alt="Muhammad Umer Khan"
-              className="w-48 h-48 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 transition-transform duration-300 transform hover:scale-105"
+              className="w-48 h-48 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 transition-transform duration-300 transform hover:scale-105 ring-4 ring-purple-500 ring-opacity-50"
             />
             <div>
               <h2 className="text-3xl font-semibold mb-4">Profile</h2>
@@ -81,7 +80,7 @@ const About = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12"
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
         >
           <h2 className="text-3xl font-semibold mb-6">Education</h2>
           <div className="space-y-4">
@@ -104,7 +103,7 @@ const About = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12"
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
         >
           <h2 className="text-3xl font-semibold mb-6">Skills</h2>
           <div className="space-y-4">
@@ -131,7 +130,7 @@ const About = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1 }}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl"
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl backdrop-blur-md"
         >
           <h2 className="text-3xl font-semibold mb-6">Get In Touch</h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

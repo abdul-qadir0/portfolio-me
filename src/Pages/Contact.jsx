@@ -1,4 +1,3 @@
-// components/Contact.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
@@ -25,7 +24,7 @@ const Contact = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-8"
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-8 backdrop-blur-md"
         >
           <h2 className="text-4xl font-bold text-white mb-6">Get in Touch</h2>
           <div className="space-y-6">
