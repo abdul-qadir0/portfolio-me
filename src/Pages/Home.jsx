@@ -9,7 +9,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen flex flex-col justify-center items-center p-8"
+      className="min-h-screen flex flex-col justify-center items-center p-8 overflow-y-auto" // Added overflow-y-auto
     >
       <motion.h1
         initial={{ y: -50, opacity: 0 }}
