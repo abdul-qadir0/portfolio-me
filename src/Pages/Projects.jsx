@@ -4,16 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 const Projects = () => {
   const projectData = [
     {
-      title: "Customer Churn Prediction with NLP Insights",
+      title: "📊 Customer Churn Prediction with NLP Insights 📊",
       description: "A predictive model to identify customers at risk of churning by leveraging insights from customer feedback and interactions. Using NLP techniques, this project analyzes sentiment and extracts key themes to enhance predictive accuracy and provide actionable insights for reducing churn rates. Deployed with Streamlit for easy access to predictions and insights.",
       imageUrl: "https://www.voxco.com/wp-content/uploads/2021/09/Everything-you-need-to-know-about-Customer-Churn1.jpg",
       link: "https://customer-churn-prediction-with-nlp-insights-rlazeungatswsd5e4c.streamlit.app/"
     },
     {
-      title: "NLP-Powered Recommendation System",
+      title: "💡 NLP-Powered Recommendation System 💡",
       description: "Developed a recommendation system that assists users in exploring relevant topics in Earth Systems, Climate Science, and Environmental Engineering. Leveraging natural language processing techniques, the system analyzes course descriptions, topics, and departments to suggest personalized learning resources. Integrating multiple recommendation approaches for a comprehensive user experience.",
       imageUrl: "https://miro.medium.com/v2/resize:fit:1200/1*rTZvrFD258ZZwvGy7nyqDw.jpeg",
       link: "https://nlp-powered-recommendation-system.streamlit.app/"
+    },
+    {
+      title: "📉 ARIMA Time Series Forecasting 📉",
+      description: "This project leverages the power of Streamlit to create an interactive web application for time series analysis. Users can easily upload their data, visualize trends, test for stationarity, and fit ARIMA models. The app offers valuable insights into time series data and facilitates accurate forecasting, making it a powerful tool for data scientists and analysts.",
+      imageUrl: "https://dataaspirant.com/wp-content/uploads/2023/09/1-14.png",
+      link: "https://yahoo-stock-arima-time-series-forecasting.streamlit.app/"
     }
   ];
 
