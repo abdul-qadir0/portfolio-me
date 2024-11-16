@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       title: "📉 ARIMA Time Series Forecasting 📉",
-      description: "This project leverages the power of Streamlit to create an interactive web application for time series analysis. Users can easily upload their data, visualize trends, test for stationarity, and fit ARIMA models. The app offers valuable insights into time series data and facilitates accurate forecasting, making it a powerful tool for data scientists and analysts.",
+      description: "This project leverages the power of Streamlit to create an interactive web application for time series analysis. Users can easily upload their data, visualize trends, test for stationarity, and fit ARIMA models. The app offers valuable insights into time series data and facilitates accurate forecasting, making it a powerful tool.",
       imageUrl: "https://dataaspirant.com/wp-content/uploads/2023/09/1-14.png",
       link: "https://yahoo-stock-arima-time-series-forecasting.streamlit.app/"
     }
