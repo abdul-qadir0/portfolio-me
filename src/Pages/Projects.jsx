@@ -11,7 +11,7 @@ const Projects = () => {
     },
     {
       title: "💡 NLP-Powered Recommendation System 💡",
-      description: "Developed a recommendation system that assists users in exploring relevant topics in Earth Systems, Climate Science, and Environmental Engineering. Leveraging natural language processing techniques, the system analyzes course descriptions, topics, and departments to suggest personalized learning resources. Integrating multiple recommendation approaches for a comprehensive user experience.",
+      description: "Developed a recommendation system that helps users discover relevant learning resources in Earth Systems, Climate Science, and Environmental Engineering. Using advanced natural language processing and collaborative filtering techniques, it analyzes course metadata and user preferences to deliver personalized suggestions. This comprehensive solution integrates multiple recommendation methods for an enhanced learning experience.",
       imageUrl: "https://miro.medium.com/v2/resize:fit:1200/1*rTZvrFD258ZZwvGy7nyqDw.jpeg",
       link: "https://nlp-powered-recommendation-system.streamlit.app/"
     },
