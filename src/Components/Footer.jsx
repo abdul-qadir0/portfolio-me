@@ -43,7 +43,7 @@ const Footer = () => {
           >
             <p>&copy; {new Date().getFullYear()} Muhammad Umer Khan. All rights reserved.</p>
             <p className="mt-2">
-              Built with <span className="text-red-500">&hearts;</span> using React and Tailwind CSS
+              Built with <span className="text-red-500">&hearts;</span> using React
             </p>
           </motion.div>
         </div>
