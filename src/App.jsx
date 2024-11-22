@@ -9,9 +9,7 @@ import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 import NotFound from './Pages/NotFound';
 import StarryBackground from './Components/StarryBackground';
-
-// Import the CSS to ensure the cursor is always visible
-import './App.css'; // This is where we manage global styles
+import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
