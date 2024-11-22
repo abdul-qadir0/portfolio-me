@@ -20,7 +20,7 @@ const StarryBackground = () => {
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           radius: Math.random() * 1.5,
-          opacity: Math.random(),
+          speed: Math.random() * 0.5,
         });
       }
       return stars;
@@ -28,17 +28,20 @@ const StarryBackground = () => {
 
     const drawStars = (stars) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
       stars.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
         ctx.fill();
       });
     };
 
     const animateStars = (stars) => {
       stars.forEach((star) => {
-        star.opacity = Math.sin(Date.now() * 0.001 + star.x + star.y) * 0.5 + 0.5;
+        star.y += star.speed;
+        if (star.y > canvas.height) {
+          star.y = 0;
+        }
       });
       drawStars(stars);
       animationFrameId = requestAnimationFrame(() => animateStars(stars));
@@ -56,7 +59,13 @@ const StarryBackground = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 z-0" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 z-0"
+      style={{ background: 'linear-gradient(to bottom, #0f0c29, #302b63, #24243e)' }}
+    />
+  );
 };
 
 export default StarryBackground;
