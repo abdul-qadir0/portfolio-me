@@ -150,7 +150,7 @@ const About = () => {
           <h2 className="text-3xl font-semibold mb-6 text-purple-400">📬 Get In Touch</h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <motion.a
-              href="/path/to/your/CV.pdf"
+              href="https://drive.google.com/uc?export=download&id=1-lja10uSv5ql0QDUc6QOPOGwFKiSGvkp"
               className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-full shadow-lg flex items-center justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
