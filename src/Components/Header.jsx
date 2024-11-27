@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -14,7 +14,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full z-50 bg-transparent backdrop-blur-md">
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+      className="fixed w-full z-50 bg-transparent backdrop-blur-md"
+    >
       <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-center w-full">
           {/* Centered Navigation */}
@@ -51,31 +56,41 @@ const Header = () => {
         </div>
 
         {/* Mobile Dropdown Menu */}
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden mt-4"
-          >
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="block py-2 text-white hover:text-purple-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                <div className="flex items-center space-x-2">
-                  {item.icon}
-                  <span>{item.name}</span>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              className="md:hidden mt-4"
+            >
+              {navItems.map((item, index) => (
+                <motion.div
+                  key={item.name}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Link
+                    to={item.path}
+                    className="block py-2 text-white hover:text-purple-400 transition-colors duration-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-2">
+                      {item.icon}
+                      <span>{item.name}</span>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
 export default Header;
+

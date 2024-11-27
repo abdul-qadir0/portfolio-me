@@ -12,15 +12,15 @@ const Footer = () => {
 
   return (
     <motion.footer
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ y: 100 }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 120, damping: 20 }}
       className="bg-gray-900 bg-opacity-50 backdrop-blur-md"
     >
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="flex justify-center space-x-6 mb-4">
-            {socialLinks.map((link) => (
+            {socialLinks.map((link, index) => (
               <motion.a
                 key={link.label}
                 href={link.href}
@@ -29,6 +29,9 @@ const Footer = () => {
                 className="text-gray-400 hover:text-white transition-colors duration-300"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
               >
                 <span className="sr-only">{link.label}</span>
                 <link.icon className="h-6 w-6" />
@@ -39,7 +42,7 @@ const Footer = () => {
             className="text-center text-gray-400 text-sm"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.4 }}
           >
             <p>&copy; {new Date().getFullYear()} Muhammad Umer Khan. All rights reserved.</p>
             <p className="mt-2">
