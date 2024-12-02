@@ -20,6 +20,12 @@ const Projects = () => {
       description: "This project leverages the power of Streamlit to create an interactive web application for time series analysis. Users can easily upload their data, visualize trends, test for stationarity, and fit ARIMA models. The app offers valuable insights into time series data and facilitates accurate forecasting, making it a powerful tool.",
       imageUrl: "https://dataaspirant.com/wp-content/uploads/2023/09/1-14.png",
       link: "https://yahoo-stock-arima-time-series-forecasting.streamlit.app/"
+    },
+    {
+      title: " Loan Approval Prediction System 💳",
+      description: "The Loan Approval Prediction System is an end-to-end machine learning project that predicts the approval status of loan applications. This project highlights expertise in data preprocessing, exploratory data analysis (EDA), feature engineering, and model building with an Artificial Neural Network (ANN). It includes an interactive Streamlit application that enables users to input loan details and receive real-time predictions.",
+      imageUrl: "https://lendingplate.com/blog/wp-content/uploads/2023/08/Instant-Loan-Approval.png",
+      link: "https://customer-loan-approval.streamlit.app/"
     }
   ];
 
