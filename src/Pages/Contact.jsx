@@ -26,7 +26,7 @@ const Contact = () => {
           transition={{ delay: 0.4 }}
           className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-8 backdrop-blur-md"
         >
-          <h2 className="text-4xl font-bold text-white mb-6">Get in Touch 📞</h2>
+          {/* <h2 className="text-4xl font-bold text-white mb-6">Get in Touch 📞</h2> */}
           <div className="space-y-6">
             <motion.div 
               className="flex items-center"
