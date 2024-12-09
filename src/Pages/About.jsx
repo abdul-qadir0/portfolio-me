@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
+import StarryBackground from '../Components/StarryBackground';
 
 const About = () => {
   const skills = [
-    { name: "Statistical Analysis 📐", percentage: 90 },
-    { name: "Python 🐍", percentage: 90 },
-    { name: "Data Visualization 📉", percentage: 90 },
-    { name: "Machine Learning 🤖", percentage: 90 },
-    { name: "Deep Learning 🖧", percentage: 70},
-    { name: "Natural Language Processing (NLP) 🗣️", percentage: 85 },
-    { name: "SQL 🗄️", percentage: 90 }
+    { name: "Statistical Analysis 📐", percentage: 75 },
+    { name: "Python 🐍", percentage: 85 },
+    { name: "Data Visualization 📉", percentage: 80 },
+    { name: "Machine Learning 🤖", percentage: 70 },
+    { name: "Deep Learning 🖧", percentage: 65 },
+    { name: "Natural Language Processing (NLP) 🗣️", percentage: 75 },
+    { name: "SQL 🗄️", percentage: 80 }
   ];
 
   const educationControls = useAnimation();
@@ -57,7 +58,8 @@ const About = () => {
 
   return (
     <div className="min-h-screen p-8 pt-24 bg-gray-900">
-      <div className="max-w-6xl mx-auto text-gray-300">
+      <StarryBackground />
+      <div className="max-w-6xl mx-auto text-gray-300 relative z-10">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -261,3 +263,4 @@ const About = () => {
 };
 
 export default About;
+
