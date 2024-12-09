@@ -4,12 +4,13 @@ import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const skills = [
-    { name: "SQL 🗄️", percentage: 75 },
+    { name: "Statistical Analysis 📐", percentage: 90 },
     { name: "Python 🐍", percentage: 90 },
-    { name: "Data Visualization 📊", percentage: 95 },
-    { name: "Statistical Analysis 📐", percentage: 85 },
-    { name: "Machine Learning 🤖", percentage: 85 },
-    { name: "Natural Language Processing (NLP) 🗣️", percentage: 80 },
+    { name: "Data Visualization 📉", percentage: 90 },
+    { name: "Machine Learning 🤖", percentage: 90 },
+    { name: "Deep Learning 🖧", percentage: 70},
+    { name: "Natural Language Processing (NLP) 🗣️", percentage: 85 },
+    { name: "SQL 🗄️", percentage: 90 }
   ];
 
   const educationControls = useAnimation();
@@ -84,22 +85,37 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-semibold mb-4 text-left">👤 Profile</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                Hello! I am Muhammad Umer Khan, an aspiring Data Scientist passionate about harnessing data for insights. I'm currently pursuing a B.Sc. in Computer Science, while building real-world skills through hands-on projects and internships.
+                Hello! I am Muhammad Umer Khan, an aspiring Data Scientist driven by a passion for transforming data into actionable insights. Currently, I am pursuing a B.Sc. in Computer Science while gaining practical experience through hands-on projects and internships.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                My expertise covers <strong>Data Analysis</strong>, <strong>Machine Learning</strong>, and <strong>Natural Language Processing (NLP)</strong>. I enjoy exploring technologies and crafting solutions for complex challenges, with a strong foundation in <strong>SQL</strong>, <strong>Python</strong>, and data visualization.
+                My expertise lies in <strong>Data Analysis</strong>, <strong>Machine Learning</strong>, and <strong>Natural Language Processing (NLP)</strong>. With a solid foundation in <strong>Python</strong>, <strong>SQL</strong>, and data visualization, I thrive on exploring innovative technologies and solving complex problems with creative solutions.
               </p>
-            </div>
+            </div> 
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: "📂 Domains", content: "Retail, E-commerce, HR Analytics, Customer Segmentation, Natural Language Processing (NLP)" },
-              { title: "🗣️ Languages", content: "English, Urdu" },
-              { title: "📊 BI Tools", content: "Microsoft Power BI" },
-              { title: "🛠️ Technical Skills", content: "Python, SQL, Spacy, NLTK, FastAPI, MySQL, Scikit-learn, Pandas, Numpy, Matplotlib, Seaborn" },
-              { title: "🌱 Interests", content: "Gym 🏋️‍♂️, Learning New Technologies 💡, Web Development 🌐, Exploring Machine Learning Algorithms 🤖" },
-            ].map((item, index) => (
+    { 
+      title: "📂 Domains", 
+      content: "Retail Analytics, E-commerce Personalization, HR Analytics, Customer Segmentation, NLP Applications" 
+    },
+    { 
+      title: "🗣️ Languages", 
+      content: "English (Professional), Urdu (Native)" 
+    },
+    { 
+      title: "📊 Visualization Tools", 
+      content: "Microsoft Power BI, Matplotlib, Seaborn" 
+    },
+    { 
+      title: "🛠️ Technical Skills", 
+      content: "Python, SQL, Scikit-learn, Pandas, NumPy, SpaCy, NLTK" 
+    },
+    { 
+      title: "🌱 Interests", 
+      content: "Fitness Enthusiast 🏋️‍♂️, Exploring New Technologies 💡, Machine Learning 🤖, Web Development 🌐" 
+    },
+  ].map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ x: index % 2 === 0 ? -50 : 50, opacity: 0 }}
@@ -129,13 +145,13 @@ const About = () => {
                 degree: "B.Sc. in Computer Science",
                 year: "2023 - Present",
                 institution: "Sindh Madressatul Islam University",
-                grade: "First Class Distinction",
+                grade: "First Class with Distinction",
               },
               {
-                degree: "Higher Secondary School",
-                year: "2021 - 2022",
+                degree: "Higher Secondary School Certificate (HSSC)",
+                year: "2021 - 2023",
                 institution: "Government College for Men",
-                grade: "First Class Distinction",
+                grade: "First Class with Distinction",
               },
             ].map((edu, index) => (
               <motion.div
