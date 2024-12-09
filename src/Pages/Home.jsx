@@ -26,7 +26,7 @@ const Home = () => {
         transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
         className="text-xl text-gray-300 mb-12 text-center max-w-2xl z-10"
       >
-        Hello! I'm <span className="font-semibold text-white">Muhammad Umer Khan</span> 👨‍💻, an aspiring Data Scientist who loves transforming raw data into meaningful insights 📊. I thrive on solving complex problems with creativity and precision 💡.
+        Hello! I'm <span className="font-semibold text-white">Muhammad Umer Khan</span> 👨‍💻, an aspiring Data Scientist passionate about transforming raw data into actionable insights 📊. I excel at solving complex problems with innovative and precise solutions 💡.
       </motion.p>
 
       <motion.div
