@@ -15,12 +15,12 @@ const About = () => {
   ];
 
   const [certificates, setCertificates] = useState([
-    { title: "Excel Certificate", issuer: "Digital Empowerment Pakistan", image: "../../img's/Excel.png" },
-    { title: "Foundation of Python Challenge", issuer: "Microsoft", image: "../../img's/Foundation of Python Challenge.png" },
-    { title: "IBM Machine Learning", issuer: "Coursera", image: "../../img's/ML Certificate.png" },
-    { title: "Database and SQL", issuer: "Coursera", image: "../../img's/Database and SQL.png" },
-    { title: "Python for AI and Data Science", issuer: "Coursera", image: "../../img's/Python for AI and DS.png" },
-    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "../../img's/Internship Certificate.png" },
+    { title: "Excel Certificate", issuer: "Digital Empowerment Pakistan", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/Excel.png" },
+    { title: "Foundation of Python Challenge", issuer: "Microsoft", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/Foundation%20of%20Python%20Challenge.png" },
+    { title: "IBM Machine Learning", issuer: "Coursera", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/ML%20Certificate.png" },
+    { title: "Database and SQL", issuer: "Coursera", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/Database%20and%20SQL.png" },
+    { title: "Python for AI and Data Science", issuer: "Coursera", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/Python%20for%20AI%20and%20DS.png" },
+    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "https://github.com/MuhammadUmerKhan/Portfolio/blob/main/img's/Internship%20Certificate.png" },
     
   ]);
 
