@@ -20,7 +20,7 @@ const About = () => {
     { title: "IBM Machine Learning", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/ML%20Certificate.png" },
     { title: "Database and SQL", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Database%20and%20SQL.png" },
     { title: "Python for AI and Data Science", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Python%20for%20AI%20and%20DS.png" },
-    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "hhttps://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Internship%20Certificate.png" },
+    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Internship%20Certificate.png" },
     
   ]);
 
