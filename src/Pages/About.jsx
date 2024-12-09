@@ -155,15 +155,15 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
-            degree: "B.Sc. in Computer Science",
-            year: "2023 - Present",
-            institution: "Sindh Madressatul Islam University",
-            grade: "First Class with Distinction",
-          },
-          {
             degree: "Higher Secondary School Certificate (HSSC)",
             year: "2021 - 2023",
             institution: "Government College for Men",
+            grade: "First Class with Distinction",
+          },
+          {
+            degree: "B.Sc. in Computer Science",
+            year: "2023 - Present",
+            institution: "Sindh Madressatul Islam University",
             grade: "First Class with Distinction",
           },
         ].map((edu, index) => (
