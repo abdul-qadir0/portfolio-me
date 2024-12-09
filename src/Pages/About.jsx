@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { FaDownload, FaLinkedin, FaGithub } from "react-icons/fa";
 import StarryBackground from '../Components/StarryBackground';
@@ -11,8 +11,18 @@ const About = () => {
     { name: "Machine Learning 🤖", percentage: 70 },
     { name: "Deep Learning 🖧", percentage: 65 },
     { name: "Natural Language Processing (NLP) 🗣️", percentage: 75 },
-    { name: "SQL 🗄️", percentage: 80 }
+    { name: "SQL 🗄️", percentage: 80 },
   ];
+
+  const [certificates, setCertificates] = useState([
+    { title: "Excel Certificate", issuer: "Digital Empowerment Pakistan", image: "../../img's/Excel.png" },
+    { title: "Foundation of Python Challenge", issuer: "Microsoft", image: "../../img's/Foundation of Python Challenge.png" },
+    { title: "IBM Machine Learning", issuer: "Coursera", image: "../../img's/ML Certificate.png" },
+    { title: "Database and SQL", issuer: "Coursera", image: "../../img's/Database and SQL.png" },
+    { title: "Python for AI and Data Science", issuer: "Coursera", image: "../../img's/Python for AI and DS.png" },
+    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "../../img's/Internship Certificate.png" },
+    
+  ]);
 
   const educationControls = useAnimation();
   const skillsControls = useAnimation();
@@ -59,7 +69,7 @@ const About = () => {
   return (
     <div className="min-h-screen p-8 pt-24 bg-gray-900">
       <StarryBackground />
-      <div className="max-w-6xl mx-auto text-gray-300 relative z-10">
+      <div className="max-w-7xl mx-auto text-gray-300 relative z-10">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -97,27 +107,27 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-    { 
-      title: "📂 Domains", 
-      content: "Retail Analytics, E-commerce Personalization, HR Analytics, Customer Segmentation, NLP Applications" 
-    },
-    { 
-      title: "🗣️ Languages", 
-      content: "English (Professional), Urdu (Native)" 
-    },
-    { 
-      title: "📊 Visualization Tools", 
-      content: "Microsoft Power BI, Matplotlib, Seaborn" 
-    },
-    { 
-      title: "🛠️ Technical Skills", 
-      content: "Python, SQL, Scikit-learn, Pandas, NumPy, SpaCy, NLTK" 
-    },
-    { 
-      title: "🌱 Interests", 
-      content: "Fitness Enthusiast 🏋️‍♂️, Exploring New Technologies 💡, Machine Learning 🤖, Web Development 🌐" 
-    },
-  ].map((item, index) => (
+              { 
+                title: "📂 Domains", 
+                content: "Retail Analytics, E-commerce Personalization, HR Analytics, Customer Segmentation, NLP Applications" 
+              },
+              { 
+                title: "🗣️ Languages", 
+                content: "English (Professional), Urdu (Native)" 
+              },
+              { 
+                title: "📊 Visualization Tools", 
+                content: "Microsoft Power BI, Matplotlib, Seaborn" 
+              },
+              // { 
+              //   title: "🛠️ Technical Skills", 
+              //   content: "Python, SQL, Scikit-learn, Tensorflow, Pandas, NumPy, SpaCy, NLTK" 
+              // },
+              { 
+                title: "🌱 Interests", 
+                content: "Fitness Enthusiast 🏋️‍♂️, Exploring New Technologies 💡, Machine Learning 🤖, Web Development 🌐" 
+              },
+            ].map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ x: index % 2 === 0 ? -50 : 50, opacity: 0 }}
@@ -134,41 +144,42 @@ const About = () => {
 
         {/* Education section */}
         <motion.div
-          ref={educationRef}
-          initial="hidden"
-          animate={educationControls}
-          variants={containerVariants}
-          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
-        >
-          <h2 className="text-3xl font-semibold mb-6 text-purple-400">🎓 Education</h2>
-          <div className="space-y-4">
-            {[
-              {
-                degree: "B.Sc. in Computer Science",
-                year: "2023 - Present",
-                institution: "Sindh Madressatul Islam University",
-                grade: "First Class with Distinction",
-              },
-              {
-                degree: "Higher Secondary School Certificate (HSSC)",
-                year: "2021 - 2023",
-                institution: "Government College for Men",
-                grade: "First Class with Distinction",
-              },
-            ].map((edu, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-gray-700 bg-opacity-50 p-6 rounded-lg shadow-md"
-              >
-                <h3 className="text-xl font-semibold text-blue-400">{edu.degree}</h3>
-                <p className="text-gray-300">{edu.year}</p>
-                <p className="text-gray-300">{edu.institution}</p>
-                <p className="text-gray-300">Grade: {edu.grade}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+      ref={educationRef}
+      initial="hidden"
+      animate={educationControls}
+      variants={containerVariants}
+      className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
+    >
+      <h2 className="text-3xl font-semibold mb-6 text-purple-400">🎓 Education</h2>
+      {/* Changed to a two-column grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {[
+          {
+            degree: "B.Sc. in Computer Science",
+            year: "2023 - Present",
+            institution: "Sindh Madressatul Islam University",
+            grade: "First Class with Distinction",
+          },
+          {
+            degree: "Higher Secondary School Certificate (HSSC)",
+            year: "2021 - 2023",
+            institution: "Government College for Men",
+            grade: "First Class with Distinction",
+          },
+        ].map((edu, index) => (
+          <motion.div
+            key={index}
+            variants={itemVariants}
+            className="bg-gray-700 bg-opacity-50 p-6 rounded-lg shadow-md"
+          >
+            <h3 className="text-xl font-semibold text-blue-400">{edu.degree}</h3>
+            <p className="text-gray-300">{edu.year}</p>
+            <p className="text-gray-300">{edu.institution}</p>
+            <p className="text-gray-300">Grade: {edu.grade}</p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
 
         {/* Skills section */}
         <motion.div
@@ -214,6 +225,30 @@ const About = () => {
           </div>
         </motion.div>
 
+        {/* Certificates section */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl mb-12 backdrop-blur-md"
+        >
+          <h2 className="text-3xl font-semibold mb-6 text-purple-400">🏆 Certificates</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="bg-gray-700 p-4 rounded-lg shadow-lg w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                {certificates.map((certificate, index) => (
+                  <img
+                    key={index}
+                    src={certificate.image}
+                    alt={`Certificate ${index + 1}`}
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+        
         {/* Get In Touch section */}
         <motion.div
           ref={getInTouchRef}
@@ -231,7 +266,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}
               variants={itemVariants}
             >
-              <FaDownload className="mr-2" /> Download CV 📄
+              <FaDownload className="mr-2" /> Resume 📄
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/muhammad-umer-khan-61729b260/"
@@ -263,4 +298,3 @@ const About = () => {
 };
 
 export default About;
-
