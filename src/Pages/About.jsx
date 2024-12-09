@@ -15,12 +15,12 @@ const About = () => {
   ];
 
   const [certificates, setCertificates] = useState([
-    { title: "Excel Certificate", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Excel.png" },
-    { title: "Foundation of Python Challenge", issuer: "Microsoft", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Foundation%20of%20Python%20Challenge.png" },
-    { title: "IBM Machine Learning", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/ML%20Certificate.png" },
-    { title: "Database and SQL", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Database%20and%20SQL.png" },
-    { title: "Python for AI and Data Science", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Python%20for%20AI%20and%20DS.png" },
-    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/certificated/Internship%20Certificate.png" },
+    { title: "Excel Certificate", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Excel.png" },
+    { title: "Foundation of Python Challenge", issuer: "Microsoft", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Foundation%20of%20Python%20Challenge.png" },
+    { title: "IBM Machine Learning", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/ML%20Certificate.png" },
+    { title: "Database and SQL", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Database%20and%20SQL.png" },
+    { title: "Python for AI and Data Science", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Python%20for%20AI%20and%20DS.png" },
+    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Internship%20Certificate.png" },
     
   ]);
 
