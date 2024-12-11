@@ -64,7 +64,7 @@ const About = () => {
   };
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col">
-      <StarryBackground />
+      {/* <StarryBackground /> */}
       <div className="flex-grow">
         <div className="max-w-8xl mx-auto text-gray-300 relative z-10 p-8 pt-24">
           <motion.h1
@@ -251,7 +251,7 @@ const About = () => {
             variants={containerVariants}
             className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-2xl backdrop-blur-md"
           >
-            <h2 className="text-3xl font-semibold mb-6 text-purple-400">📬 Get In Touch</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-purple-400"><center>📬 Get In Touch</center> </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <motion.a
                 href="https://drive.google.com/uc?export=download&id=1xlcoTGBqWtqoGk-GF2jERWe_pF-yprhI"
