@@ -42,7 +42,7 @@ const Contact = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <FaPhoneAlt className="text-blue-400 text-2xl mr-4" />
-              <p className="text-lg text-gray-300">+92 3432187868 📱</p>
+              <p className="text-lg text-gray-300">+92 34483634014 📱</p>
             </motion.div>
             <motion.div 
               className="flex items-center"
@@ -50,7 +50,7 @@ const Contact = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <FaEnvelope className="text-blue-400 text-2xl mr-4" />
-              <p className="text-lg text-gray-300">muhammadumerk546@gmail.com ✉️</p>
+              <p className="text-lg text-gray-300">aqjakhro0@gmail.com ✉️</p>
             </motion.div>
           </div>
         </motion.div>
@@ -62,7 +62,7 @@ const Contact = () => {
           className="flex justify-center"
         >
           <motion.a
-            href="https://www.linkedin.com/in/muhammad-umer-khan-61729b260/"
+            href="https://www.linkedin.com/in/abdulqadir004/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-8 rounded-full shadow-lg flex items-center text-lg font-semibold"

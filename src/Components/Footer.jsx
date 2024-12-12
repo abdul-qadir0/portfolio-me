@@ -4,10 +4,10 @@ import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: FaLinkedin, href: "https://www.linkedin.com/in/muhammad-umer-khan-61729b260/", label: "LinkedIn" },
-    { icon: FaGithub, href: "https://github.com/MuhammadUmerKhan", label: "GitHub" },
-    { icon: FaInstagram, href: "https://www.instagram.com/umr.khan.0/", label: "Instagram" },
-    { icon: FaFacebook, href: "https://www.facebook.com/umar.shahid.56211497", label: "Facebook" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/in/abdulqadir004/", label: "LinkedIn" },
+    { icon: FaGithub, href: "https://github.com/abdulqadir-004", label: "GitHub" },
+    { icon: FaInstagram, href: "https://www.instagram.com/encrypted.aq/", label: "Instagram" },
+    { icon: FaFacebook, href: "https://www.facebook.com/aq.jakhro?mibextid=ZbWKwL", label: "Facebook" },
   ];
 
   return (
@@ -44,7 +44,7 @@ const Footer = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <p>&copy; {new Date().getFullYear()} Muhammad Umer Khan. All rights reserved <span className="text-red-500">&hearts;</span></p>
+            <p>&copy; {new Date().getFullYear()} Abdul Qadir Jakhro. All rights reserved <span className="text-red-500">&hearts;</span></p>
             {/* <p className="mt-2">
               Built with <span className="text-red-500">&hearts;</span> using React
             </p> */}

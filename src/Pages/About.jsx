@@ -5,22 +5,21 @@ import StarryBackground from '../Components/StarryBackground';
 
 const About = () => {
   const skills = [
-    { name: "Statistical Analysis 📐", percentage: 75 },
-    { name: "Python 🐍", percentage: 85 },
-    { name: "Data Visualization 📉", percentage: 80 },
-    { name: "Machine Learning 🤖", percentage: 70 },
-    { name: "Deep Learning 🖧", percentage: 65 },
-    { name: "Natural Language Processing (NLP) 🗣️", percentage: 75 },
-    { name: "SQL 🗄️", percentage: 80 },
+    { name: "Java ☕", percentage: 80 },
+{ name: "C 💻", percentage: 80 },
+{ name: "SQL 🗄️", percentage: 80 },
+{ name: "Nmap 🔍", percentage: 30 },
+{ name: "Wireshark 🌊", percentage: 30 },
+{ name: "DSA 🧠", percentage: 80 },
+{ name: "GitHub 📂", percentage: 60 },
+{ name: "Hyper-V 🖥️", percentage: 80 },
+{ name: "Kali Linux 🐧", percentage: 40 }
   ];
 
   const [certificates, setCertificates] = useState([
-    { title: "Excel Certificate", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Excel.png" },
-    { title: "Foundation of Python import StarryBackground from '../Components/StarryBackground';Challenge", issuer: "Microsoft", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Foundation%20of%20Python%20Challenge.png" },
-    { title: "IBM Machine Learning", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/ML%20Certificate.png" },
-    { title: "Database and SQL", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Database%20and%20SQL.png" },
-    { title: "Python for AI and Data Science", issuer: "Coursera", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Python%20for%20AI%20and%20DS.png" },
-    { title: "Data Science Internship Certificate", issuer: "Digital Empowerment Pakistan", image: "https://raw.githubusercontent.com/MuhammadUmerKhan/Portfolio/main/imgs/Internship%20Certificate.png" },
+    { title: "Cyber Security Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/cys.png?raw=true" },
+    { title: "Networking Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/network.png?raw=true" },
+    { title: "Java Certification", issuer: "Udemy", image: "https://github.com/abdul-qadir0/pictures/blob/main/java.png?raw=true" },
     
   ]);
 
@@ -86,8 +85,8 @@ const About = () => {
           >
             <div className="flex flex-col md:flex-row items-center mb-8">
               <motion.img
-                src="https://raw.githubusercontent.com/MuhammadUmerKhan/MuhammadUmerKhan/main/assests/pic/porfolio.jpg"
-                alt="Muhammad Umer Khan"
+                src="https://github.com/abdul-qadir0/pictures/blob/main/ME2.png?raw=true"
+                alt="Abdul Qadir Jakhro"
                 className="w-48 h-48 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 ring-4 ring-purple-500 ring-opacity-50"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300, damping: 10 }}
@@ -95,10 +94,10 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-semibold mb-4 text-left">👤 Profile</h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                  Hello! I am Muhammad Umer Khan, an aspiring Data Scientist driven by a passion for transforming data into actionable insights. Currently, I am pursuing a B.Sc. in Computer Science while gaining practical experience through hands-on projects and internships.
+                Hi, I'm Abdul Qadir Jakhro, a passionate Computer Science undergrad with a strong interest in cybersecurity. I'm focused on enhancing digital security and protecting systems from evolving cyber threats. Currently, I'm learning and developing my skills in red team operations and networking, with the goal of staying ahead of emerging security challenges.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                  My expertise lies in <strong>Data Analysis</strong>, <strong>Machine Learning</strong>, and <strong>Natural Language Processing (NLP)</strong>. With a solid foundation in <strong>Python</strong>, <strong>SQL</strong>, and data visualization, I thrive on exploring innovative technologies and solving complex problems with creative solutions.
+                Along with my cybersecurity focus, I also have a foundational knowledge of programming in <strong>Java</strong>, <strong>C</strong>, and <strong>SQL</strong>. With a drive to learn and grow, I aim to contribute meaningfully to the cybersecurity field while continually expanding my technical expertise.
                 </p>
               </div> 
             </div>
@@ -106,16 +105,16 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { 
-                  title: "📂 Domains", 
-                  content: "Retail Analytics, E-commerce Personalization, HR Analytics, Customer Segmentation, NLP Applications" 
+                  title: "📂 Key Interests", 
+                  content: "Cybersecurity, Red Team Operations, Networking" 
                 },
                 { 
                   title: "🗣️ Languages", 
-                  content: "English (Professional), Urdu (Native)" 
+                  content: "English (Professional), Sindhi (Native), Urdu (Native)" 
                 },
                 { 
-                  title: "📊 Visualization Tools", 
-                  content: "Microsoft Power BI, Matplotlib, Seaborn" 
+                  title: "📊 Tools", 
+                  content: "Hyper-V, Nmap, Kali Linux, GitHub, Wireshark, MySQL" 
                 },
                 // { 
                 //   title: "🛠️ Technical Skills", 
@@ -123,7 +122,7 @@ const About = () => {
                 // },
                 { 
                   title: "🌱 Interests", 
-                  content: "Fitness Enthusiast 🏋️‍♂️, Exploring New Technologies 💡, Machine Learning 🤖, Web Development 🌐" 
+                  content: "Gaming 💻🎮, Exploring New Technologies 💡, Cooking 🍳" 
                 },
               ].map((item, index) => (
                 <motion.div
@@ -156,7 +155,7 @@ const About = () => {
                 {
                   degree: "Higher Secondary School Certificate (HSSC)",
                   year: "2021 - 2023",
-                  institution: "Government College for Men",
+                  institution: "Government Hyder Bux Jatoi (M) Science College Dokri",
                   grade: "First Class with Distinction",
                 },
                 {
@@ -263,7 +262,7 @@ const About = () => {
                 <FaDownload className="mr-2" /> Resume 📄
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/muhammad-umer-khan-61729b260/"
+                href="https://www.linkedin.com/in/abdulqadir004/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-blue-600 text-white py-3 px-6 rounded-full shadow-lg flex items-center justify-center"
@@ -274,7 +273,7 @@ const About = () => {
                 <FaLinkedin className="mr-2" /> LinkedIn 🔗
               </motion.a>
               <motion.a
-                href="https://github.com/MuhammadUmerKhan"
+                href="https://github.com/abdulqadir-004"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-gray-700 text-white py-3 px-6 rounded-full shadow-lg flex items-center justify-center"
