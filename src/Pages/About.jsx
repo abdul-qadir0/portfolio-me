@@ -17,9 +17,9 @@ const About = () => {
   ];
 
   const [certificates, setCertificates] = useState([
-    { title: "Foundations of Cybersecurity", issuer: "Google", image: "https://coursera.org/share/869313daa30741a2bf27b50c2db65cfa" },
-    { title: "AI Essentials", issuer: "Google", image: "https://coursera.org/share/45e879a4477d226b09803cf072dcb968" },
-    { title: "Play it Safe: Manage Security Risks", issuer: "Google", image: "https://coursera.org/share/e31bf924a409b109f2552a608d86e451" },
+    { title: "Foundations of Cybersecurity", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/cys.jpg?raw=true" },
+    { title: "AI Essentials", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/AI.jpg?raw=true" },
+    { title: "Play it Safe: Manage Security Risks", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Play%20it%20Safe.jpg?raw=true" },
     { title: "Networking Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/network.png?raw=true" },
     { title: "Java Certification", issuer: "Udemy", image: "https://github.com/abdul-qadir0/pictures/blob/main/java.png?raw=true" },
     
