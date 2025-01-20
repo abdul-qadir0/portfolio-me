@@ -5,19 +5,21 @@ import StarryBackground from '../Components/StarryBackground';
 
 const About = () => {
   const skills = [
+    { name: "Virtualization 🖥️", percentage: 85 },
+    { name: "Active Directory 🔐", percentage: 60 },
+    { name: "Prompt Design 📝", percentage: 85 },
+    { name: "DSA 🧠", percentage: 85 },
     { name: "Java ☕", percentage: 80 },
-{ name: "C 💻", percentage: 80 },
-{ name: "SQL 🗄️", percentage: 80 },
-{ name: "Nmap 🔍", percentage: 30 },
-{ name: "Wireshark 🌊", percentage: 30 },
-{ name: "DSA 🧠", percentage: 80 },
-{ name: "GitHub 📂", percentage: 60 },
-{ name: "Hyper-V 🖥️", percentage: 80 },
-{ name: "Kali Linux 🐧", percentage: 40 }
+{ name: "C 💻", percentage: 70 },
+{ name: "SQL 🗄️", percentage: 70 },
+{ name: "Database Management 💾", percentage: 70 },
+{ name: "Networking 🌐", percentage: 60 }
   ];
 
   const [certificates, setCertificates] = useState([
-    { title: "Cyber Security Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/cys.png?raw=true" },
+    { title: "Foundations of Cybersecurity", issuer: "Google", image: "https://coursera.org/share/869313daa30741a2bf27b50c2db65cfa" },
+    { title: "AI Essentials", issuer: "Google", image: "https://coursera.org/share/45e879a4477d226b09803cf072dcb968" },
+    { title: "Play it Safe: Manage Security Risks", issuer: "Google", image: "https://coursera.org/share/e31bf924a409b109f2552a608d86e451" },
     { title: "Networking Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/network.png?raw=true" },
     { title: "Java Certification", issuer: "Udemy", image: "https://github.com/abdul-qadir0/pictures/blob/main/java.png?raw=true" },
     
@@ -114,7 +116,7 @@ const About = () => {
                 },
                 { 
                   title: "📊 Tools", 
-                  content: "Hyper-V, Nmap, Kali Linux, GitHub, Wireshark, MySQL" 
+                  content: "Hyper-V, GitHub, MySQL" 
                 },
                 // { 
                 //   title: "🛠️ Technical Skills", 
@@ -253,7 +255,7 @@ const About = () => {
             <h2 className="text-3xl font-semibold mb-6 text-purple-400"><center>📬 Get In Touch</center> </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <motion.a
-                href="https://drive.google.com/uc?export=download&id=1xlcoTGBqWtqoGk-GF2jERWe_pF-yprhI"
+                href="https://drive.google.com/file/d/1lVhflQiRvBzSxUXxrUw1vKDUiOBih2yi/view"
                 className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-full shadow-lg flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
