@@ -17,6 +17,7 @@ const About = () => {
   ];
 
   const [certificates, setCertificates] = useState([
+    { title: "Google Cybersecurity Professional Certificate", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/cysMain.jpg?raw=true" },
     { title: "Foundations of Cybersecurity", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/cys.jpg?raw=true" },
     { title: "AI Essentials", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/AI.jpg?raw=true" },
     { title: "Play it Safe: Manage Security Risks", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Play.jpg?raw=true" },
