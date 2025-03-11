@@ -19,9 +19,16 @@ const About = () => {
   const [certificates, setCertificates] = useState([
     { title: "Google Cybersecurity Professional Certificate", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/cysMain.jpg?raw=true" },
     { title: "Foundations of Cybersecurity", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/cys.jpg?raw=true" },
+    { title: "Sound th Alarm: Detection and Response", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Alarm.jpg?raw=true" },
     { title: "AI Essentials", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/AI.jpg?raw=true" },
+    { title: "Assets, Threats, and Vulnerabilities", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Assets.jpg?raw=true" },
+    { title: "Automate Cybersecurity Tasks with Python", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Automate.jpg?raw=true" },
+    { title: "Put it to Work: Prepare for Cybersecurity Jobs", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Put.jpg?raw=true" },
+    { title: "Tools of the Trade: Linux and SQL", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Linux.jpg?raw=true" },
+    { title: "Connect and Protect: Network and Network Security", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/NetworkG.jpg?raw=true" },
     { title: "Play it Safe: Manage Security Risks", issuer: "Google", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Play.jpg?raw=true" },
     { title: "Networking Fundamentals", issuer: "Cybrary", image: "https://github.com/abdul-qadir0/pictures/blob/main/network.png?raw=true" },
+    { title: "Python Certification", issuer: "Udemy", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Python.jpg?raw=true" },
     { title: "Java Certification", issuer: "Udemy", image: "https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/Java.jpg?raw=true" },
     
   ]);
