@@ -39,7 +39,7 @@ const Home = () => {
         transition={{ delay: 0.4, duration: 0.8, type: "spring" }}
         className="text-xl text-gray-300 mb-12 text-center max-w-2xl z-10"
       >
-        Hello! I'm <span className="font-semibold text-white">Abdul Qadir Jakhro</span> 👨‍💻, I am an aspiring cybersecurity professional passionate about enhancing digital security and protecting systems from evolving cyber threats 🔐. Currently, I'm in the process of honing my skills in red team operations, networking, and various security tools to stay ahead of emerging security challenges 💻. As I continue learning and growing in the field, I'm committed to acquiring hands-on experience and expanding my expertise to better safeguard against the ever-changing landscape of cybersecurity threats.
+        Hello! I'm <span className="font-semibold text-white">Abdul Qadir Jakhro</span> 👨‍💻, a Computer Science undergrad with a strong passion for cybersecurity. I’m Google-certified and currently sharpening my skills in ethical hacking and penetration testing. My technical foundation includes Python, Java, C, MySQL, and MongoDB, with hands-on experience in Windows Server, Active Directory, Linux systems, and virtual environments. I thrive on tackling security challenges and continuously expanding my knowledge to stay ahead in the evolving cybersecurity landscape. Currently, I'm working towards the CEH certification and actively practicing in lab environments.
 
 
       </motion.p>
