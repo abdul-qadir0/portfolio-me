@@ -95,7 +95,7 @@ const About = () => {
           >
             <div className="flex flex-col md:flex-row items-center mb-8">
               <motion.img
-                src="https://github.com/abdul-qadir0/pictures/blob/main/ME2.png?raw=true"
+                src="https://github.com/abdul-qadir0/portfolio-me/blob/main/imgs/ME0.jpg?raw=true"
                 alt="Abdul Qadir Jakhro"
                 className="w-48 h-48 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 ring-4 ring-purple-500 ring-opacity-50"
                 whileHover={{ scale: 1.05 }}
@@ -104,11 +104,11 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-semibold mb-4 text-left">👤 Profile</h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                Hi, I'm Abdul Qadir Jakhro, a passionate Computer Science undergrad with a strong interest in cybersecurity. I'm focused on enhancing digital security and protecting systems from evolving cyber threats. Currently, I'm learning and developing my skills in red team operations and networking, with the goal of staying ahead of emerging security challenges.
-                </p>
-                <p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
-                Along with my cybersecurity focus, I also have a foundational knowledge of programming in <strong>Java</strong>, <strong>C</strong>, and <strong>SQL</strong>. With a drive to learn and grow, I aim to contribute meaningfully to the cybersecurity field while continually expanding my technical expertise.
-                </p>
+                 Hi, I'm Abdul Qadir Jakhro, a passionate Computer Science undergrad with a strong interest in cybersecurity. I'm dedicated to enhancing digital security and protecting systems from evolving cyber threats. Currently, I'm developing my skills in red team operations, ethical hacking, and networking, with the goal of staying ahead of emerging security challenges.
+</p>
+<p className="text-gray-300 text-lg leading-relaxed mb-4 text-left">
+    Along with my cybersecurity focus, I have a solid foundation in programming with <strong>Python</strong>, <strong>Java</strong>, <strong>C</strong>, <strong>MySQL</strong>, and <strong>MongoDB</strong>. I also have hands-on experience with <strong>Windows Server</strong>, <strong>Active Directory</strong>, <strong>Linux systems</strong>, and <strong>virtual environments</strong>. With a drive to learn and grow, I aim to contribute meaningfully to the cybersecurity field while continually expanding my technical expertise.
+</p>
               </div> 
             </div>
 
