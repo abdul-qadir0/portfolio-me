@@ -5,15 +5,17 @@ import StarryBackground from '../Components/StarryBackground';
 
 const About = () => {
   const skills = [
+{ name: "Python 🐍", percentage: 75 },
+{ name: "Prompt Design 📝", percentage: 85 },
+{ name: "Active Directory 🔐", percentage: 60 },
+{ name: "Windows Server 🖥️", percentage: 70 },
+{ name: "DSA 🧠", percentage: 85 },
+{ name: "Java ☕", percentage: 80 },
     { name: "Virtualization 🖥️", percentage: 85 },
-    { name: "Active Directory 🔐", percentage: 60 },
-    { name: "Prompt Design 📝", percentage: 85 },
-    { name: "DSA 🧠", percentage: 85 },
-    { name: "Java ☕", percentage: 80 },
 { name: "C 💻", percentage: 70 },
 { name: "SQL 🗄️", percentage: 70 },
 { name: "Database Management 💾", percentage: 70 },
-{ name: "Networking 🌐", percentage: 60 }
+{ name: "Networking 🌐", percentage: 60 },
   ];
 
   const [certificates, setCertificates] = useState([
@@ -124,7 +126,7 @@ const About = () => {
                 },
                 { 
                   title: "📊 Tools", 
-                  content: "Hyper-V, GitHub, MySQL" 
+                  content: "Kali Linux, Hyper-V, GitHub, MySQL, MongoDB" 
                 },
                 // { 
                 //   title: "🛠️ Technical Skills", 
