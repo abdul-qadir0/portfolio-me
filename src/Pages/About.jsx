@@ -265,7 +265,7 @@ const About = () => {
             <h2 className="text-3xl font-semibold mb-6 text-purple-400"><center>📬 Get In Touch</center> </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <motion.a
-                href="https://drive.google.com/file/d/1JeIp78QKWzVmMVCVNxB0pjMUcwmCFd_E/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NWy95oT0sWQCNarV_I7kMfuvycnCqpyP/view?usp=drivesdk"
                 className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-full shadow-lg flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
